@@ -1,0 +1,67 @@
+#map {
+    width: 100vw;
+    margin: 0
+}
+
+hr {
+    width: 100%;
+}
+
+
+#marker_legend {
+    padding: 1em;
+}
+
+
+.store-card {
+    width: 18rem;
+    flex-grow: 1;
+    justify-content: space-between;
+    transition-duration: 800ms;
+    background-color: #808080;
+    border: none;
+}
+
+
+.store-card:target,
+.store-card:focus,
+.store-card:hover {
+    transform: scale(1.01);
+}
+
+.store-card:nth-child(odd) {
+    background-color: #a6a6a6;
+}
+
+
+#address_box {
+    font-size: .9rem;
+    margin: 0;    
+}
+
+#store_display {
+    flex-wrap: wrap;
+}
+
+#main_content {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    #main_content {
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+    }
+
+    #map {
+        height: 500px;
+        width: 100%;
+        
+    }
+
+    #store_search {
+        min-width: 100%;
+        flex-grow: 1;        
+    }    
+}
